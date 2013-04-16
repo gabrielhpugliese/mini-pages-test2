@@ -1,0 +1,32 @@
+<head>
+    <title>teste</title>
+</head>
+
+<body></body>
+
+<template name="layout">
+    <div class="sidebar-nav">
+        <div class="well" style="width:300px; padding: 8px 0;">
+            <ul class="nav nav-list">
+                <li class="nav-header">
+                    Main
+                </li>
+                <li>
+                    <a href="{{languagePath}}Javascript">Javascript</a>
+                </li>
+                <li>
+                    <a href="{{languagePath}}Python">Python</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    {{{yield}}}
+</template>
+
+<template name="index">
+
+</template>
+
+<template name="language">
+    Chosen language: {{myLanguage}}
+</template>
